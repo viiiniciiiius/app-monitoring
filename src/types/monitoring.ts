@@ -7,6 +7,19 @@ export interface PhotoLog {
   uri?: string;
 }
 
+export interface MonitoringReadyWaiter {
+  resolve: () => void;
+  reject: (error: Error) => void;
+  timeout: ReturnType<typeof setTimeout>;
+}
+
+export interface MonitoringCounters {
+  cycles: number;
+  attempts: number;
+  successes: number;
+  failures: number;
+}
+
 export type CaptureStage =
   | 'preflight'
   | 'take_picture'

@@ -9,6 +9,8 @@ import {
   CaptureFailureReason,
   CaptureResult,
   CaptureStage,
+  MonitoringCounters,
+  MonitoringReadyWaiter,
   PhotoLog,
 } from "./monitoring";
 
@@ -17,6 +19,8 @@ export {
   CaptureFailureReason,
   CaptureResult,
   CaptureStage,
+  MonitoringCounters,
+  MonitoringReadyWaiter,
   TimeProps,
   SelectedAsset,
   ImagePayload,
